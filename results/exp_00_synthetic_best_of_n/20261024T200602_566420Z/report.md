@@ -19,17 +19,5 @@ These results are from a deliberately constructed toy distribution. No LLM or RL
 | confidence_biased | 16 | 0.0015 | 0.7499 | 0.0010 |
 | confidence_biased | 32 | 0.0000 | 0.7500 | 0.0000 |
 
-## Counterfactual sanity checks
-
-The control judge has zero style sensitivity and a 0.60 correct–incorrect score gap.
-The biased judge gives a wrong confident answer 0.75 versus 0.70 for a correct concise answer.
-Style uplift is 0.65 for wrong concise responses and 0.30 for correct concise responses (score clipping).
-Matched semantic gaps remain positive: 0.60 for concise and 0.25 for confident responses.
-Thus a judge can detect correctness within a style while still misranking answers across styles.
-
-Audits include correct/incorrect × confident/concise probes. Incorrect originals are ineligible for semantic degradation.
-
-## Next phase
-
-Introduce text answer parsing and real policy/judge adapters. Validate transformations and measure natural judge failures.
-Then test real Best-of-N and small RL before making claims about prevention or early warning.
+Synthetic selection only: no policy training or real LLM judge.
+The candidate distribution deliberately excludes correct confident answers.

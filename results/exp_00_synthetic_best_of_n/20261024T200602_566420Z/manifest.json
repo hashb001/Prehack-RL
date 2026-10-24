@@ -1,0 +1,43 @@
+{
+  "schema_version": 2,
+  "run_id": "20261024T200602_566420Z",
+  "experiments": [
+    "exp_00_synthetic_best_of_n",
+    "exp_01_synthetic_counterfactual_audit"
+  ],
+  "python": "3.12.3",
+  "trials_per_seed": 2000,
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "candidate_counts": [
+    1,
+    2,
+    4,
+    8,
+    16,
+    32
+  ],
+  "response_probabilities": [
+    0.55,
+    0.35,
+    0.1
+  ],
+  "confidence_bonus": 0.65,
+  "tie_break": "first maximum",
+  "paired_candidates": true,
+  "source_sha256": {
+    "pilot.py": "ce641d1c5a2669d8c546295e143cfeb352248394c7bec9b1fa110dbe252b6f58",
+    "prehack/core.py": "f363f7dea97e553e080ab52751858a2088165cba54d01291d67b1d891d1882b2"
+  },
+  "limitations": "Synthetic oracle-based judge; no LLM, RL, or predictive claim.",
+  "artifacts": {
+    "summary": "summary.csv",
+    "report": "report.md",
+    "raw_records": "../../../runs/20261024T200602_566420Z/trials.jsonl",
+    "raw_manifest": "../../../runs/20261024T200602_566420Z/manifest.json"
+  },
+  "experiment": "exp_00_synthetic_best_of_n"
+}
