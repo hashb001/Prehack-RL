@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "experiment": "synthetic_best_of_n",
+  "python": "3.12.3",
+  "trials_per_seed": 2000,
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "candidate_counts": [
+    1,
+    2,
+    4,
+    8,
+    16,
+    32
+  ],
+  "response_probabilities": [
+    0.55,
+    0.35,
+    0.1
+  ],
+  "confidence_bonus": 0.65,
+  "tie_break": "first maximum",
+  "paired_candidates": true,
+  "source_sha256": {
+    "pilot.py": "204dcdf131bc62ec39024bf9a36580af3c028b2169ed529e6080b68dd4b2043d",
+    "prehack/core.py": "f363f7dea97e553e080ab52751858a2088165cba54d01291d67b1d891d1882b2"
+  },
+  "limitations": "Synthetic oracle-based judge; no LLM, RL, or predictive claim."
+}
