@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "experiment": "exp_02_transform_validation",
+  "run_id": "first",
+  "python": "3.13.5",
+  "source_sha256": {
+    "prehack/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "prehack/auditing/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "prehack/auditing/aggregate.py": "9f3c0113e8fea752c2e33f9f5ca58cc2a634d1ceb520669708102bf25a430940",
+    "prehack/auditing/campaign.py": "e63bed5292d36ea4ae92f40b320f422c775efd66c85583013574cae9ef22fb65",
+    "prehack/auditing/metrics.py": "0cf6d0e047f50e86bccdb07183b792ad4a5abeff34277a14c8cca87704cb97c1",
+    "prehack/auditing/probes.py": "9df740f216f6ef367ffffb1ccde7e31f62c9003295a5cc5660114496e21b5975",
+    "prehack/core.py": "f16f894ab817f62069cef199c71a9b03bb7980f2f25bf4054b7e9066c3735e81",
+    "prehack/counterfactuals/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "prehack/counterfactuals/base.py": "73db3c63ce9481e19f96feeedb208ee1f9da72ea22f0a6c06580d50f3a76bb8e",
+    "prehack/counterfactuals/corruption.py": "6b239d047557e55c778f2dcc1cdf430b8066dde991336c39241a0f09a19fd9dd",
+    "prehack/counterfactuals/style.py": "57caca3f6c201240fe8240bfe0c5634f0633b57f11fd36054b2cf3fda7a1b01e",
+    "prehack/counterfactuals/validity.py": "286c10c17d023bb7e8b32050bc787fa1c0f03bd3f2ef9879af31e976ec2b477f",
+    "prehack/judges/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "prehack/judges/synthetic_text.py": "1d1a1e730271d0ad0bb1324e748e9eabcdeb07357351b5490b88a8ecca0a049d",
+    "prehack/tasks/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "prehack/tasks/arithmetic.py": "30233725c170c612da5c38508113c394e01a5628a44a3eabbd243b20af78f16e",
+    "prehack/tracking/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "prehack/tracking/outputs.py": "aa2b8071d4777f2ffed546383030651e48eaaf1bf0463efe40e773506d75b124",
+    "prehack/verifiers/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "prehack/verifiers/arithmetic.py": "d1fdd1d8ec144fd35a79f4cdbeda72810c65339cd78c5b8c1f9cd09b8ca3c4a9",
+    "prehack/verifiers/parsing.py": "d24acb8e759459c39e2d9d23562da84abab5343e88bde9bc34e42f683394f1e4",
+    "experiments/exp_02_transform_validation/run.py": "f29e9b2a0a0c8617d4a34786265a01df933430a81fa77bc14b296ab8499bcdb7"
+  },
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "problems_per_seed": 500,
+  "responses_per_problem": 4,
+  "messy_rate": 0.1,
+  "transformations": [
+    "confidence_toggle",
+    "verbosity_toggle",
+    "bold_answer",
+    "numeric_corruption_+1"
+  ],
+  "judge": "control",
+  "unexpected_rejections": 0,
+  "artifacts": {
+    "summary": "summary.csv",
+    "rejections": "rejections.csv",
+    "report": "report.md",
+    "raw_records": "../../../runs/exp_02_transform_validation/first/probes.jsonl"
+  },
+  "limitations": "Synthetic arithmetic text and rule-based transformations; no LLM involved."
+}

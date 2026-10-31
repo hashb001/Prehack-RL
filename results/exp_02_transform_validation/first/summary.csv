@@ -1,0 +1,5 @@
+kind,transformation,probes,valid,rejected,rejection_rate,mean_style_sensitivity,mean_style_uplift,mean_semantic_separation
+corruption,numeric_corruption_+1,6000,2645,3355,0.5591666666666667,,,0.6
+style,bold_answer,6000,5367,633,0.1055,0.0,0.0,
+style,confidence_toggle,6000,5367,633,0.1055,0.0,0.0,
+style,verbosity_toggle,6000,5367,633,0.1055,0.0,0.0,

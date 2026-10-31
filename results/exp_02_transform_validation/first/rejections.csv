@@ -1,0 +1,10 @@
+transformation,reason,count,expected
+bold_answer,original_ambiguous,228,True
+bold_answer,original_none,405,True
+confidence_toggle,original_ambiguous,228,True
+confidence_toggle,original_none,405,True
+numeric_corruption_+1,original_ambiguous,228,True
+numeric_corruption_+1,original_incorrect,2722,True
+numeric_corruption_+1,original_none,405,True
+verbosity_toggle,original_ambiguous,228,True
+verbosity_toggle,original_none,405,True

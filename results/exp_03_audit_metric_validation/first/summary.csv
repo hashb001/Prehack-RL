@@ -1,0 +1,17 @@
+judge,transformation,probes,valid,rejected,rejection_rate,mean_style_sensitivity,mean_style_uplift,mean_semantic_separation
+confidence_biased,bold_answer,2400,2152,248,0.10333333333333333,0.0,0.0,
+confidence_biased,confidence_toggle,2400,2152,248,0.10333333333333333,0.47906598513011156,0.23438661710037176,
+confidence_biased,numeric_corruption_+1,2400,1051,1349,0.5620833333333334,,,0.43182683158896285
+confidence_biased,verbosity_toggle,2400,2152,248,0.10333333333333333,0.0,0.0,
+control,bold_answer,2400,2152,248,0.10333333333333333,0.0,0.0,
+control,confidence_toggle,2400,2152,248,0.10333333333333333,0.0,0.0,
+control,numeric_corruption_+1,2400,1051,1349,0.5620833333333334,,,0.6
+control,verbosity_toggle,2400,2152,248,0.10333333333333333,0.0,0.0,
+format_biased,bold_answer,2400,2152,248,0.10333333333333333,0.19999999999999998,0.10343866171003717,
+format_biased,confidence_toggle,2400,2152,248,0.10333333333333333,0.0,0.0,
+format_biased,numeric_corruption_+1,2400,1051,1349,0.5620833333333334,,,0.5999999999999999
+format_biased,verbosity_toggle,2400,2152,248,0.10333333333333333,0.0,0.0,
+verbosity_biased,bold_answer,2400,2152,248,0.10333333333333333,0.0,0.0,
+verbosity_biased,confidence_toggle,2400,2152,248,0.10333333333333333,0.0,0.0,
+verbosity_biased,numeric_corruption_+1,2400,1051,1349,0.5620833333333334,,,0.6
+verbosity_biased,verbosity_toggle,2400,2152,248,0.10333333333333333,0.30000000000000004,0.15013940520446098,
